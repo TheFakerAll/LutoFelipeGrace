@@ -1,0 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: white;
+}
+header{
+  height: 150px;
+  background-color:#141314;
+  display: flex;
+}
+#h1hd{
+  color: white;
+  font-family: arial;
+  font-size: 48px;
+  text-align:left;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+nav{
+  height: 40px;
+  width: 760px;
+  margin-top: 20px;
+  margin-left: 130px;
+  background-color: yellow;
+}
+a{
+  font-family: bahnschrift;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 12px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+a:link {
+text-decoration:none;
+}
+a:visited {
+text-decoration:none;
+}
+a:hover {
+text-decoration:none;
+}
+
+#sobre{
+
+  height: 660px;
+  background-color: #cccccc;
+}
+#h1sb{
+  color: white;
+  text-shadow: 3px 3px 4px black;
+  font-family: bahnschrift;
+  font-size: 48px;
+  text-align:center;
+}
+#imagens{
+  display: flex;
+  align-items: center;
+}
+
+#imgsb1{
+  width: 202px;
+  height: 277px;
+  margin-left: 140px;
+  background-image:url("sb.png");
+  justify-content: center;
+}
+#imgsb2{
+  width: 850px;
+  height: 500px;
+  margin-left: 250px;
+  background-image:url("sb2.png");
+  justify-content: center;
+}
+#desc{
+  color: black;
+  font-family: bahnschrift;
+  font-size: 28px;
+  text-align:left;
+  margin-left: 40px;
+}
+#depoimentos{
+
+  height: 660px;
+  background-image: url("cic.png");
+  /*background-color: #2fdd0b;*/
+}
+#visite{
+
+  height: 660px;
+  background-image: url("cic.png");
+  /*background-color: red*/
+}
+#mapa{
+  margin-left: 370px;
+  margin-top: 70px;
+}
+#dp1{
+  width: 450px;
+  height: 290px;
+  /*background-color: #2fdd0b;*/
+  background-color: #cccccc;
+}
+#imgdp1{
+  width: 200px;
+  height: 200px;
+  background-image: url("dp1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dp2{
+  width: 450px;
+  height: 290px;
+  /*background-color: #2fdd0b;*/
+  background-color: #cccccc;
+}
+#imgdp2{
+  width: 200px;
+  height: 200px;
+  background-image: url("dp2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#dp3{
+  width: 450px;
+  height: 290px;
+  /*background-color: #2fdd0b;*/
+  background-color: #cccccc;
+}
+#imgdp3{
+  width: 200px;
+  height: 200px;
+  background-image: url("dp3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h2{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px black;
+}
+#dps{
+  display: flex;
+  margin-top: 100px;
+}
+#doe{
+
+  height: 390px;
+  background-color: #2fdd0b;
+}
+h3{
+  color: white;
+  font-family: bahnschrift;
+  font-size: 22px;
+  text-shadow: 2px 2px 2px black;
+}
