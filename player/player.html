@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://vjs.zencdn.net/7.8.3/video-js.css" rel="stylesheet" />
+  <style type="text/css">
+    
+    #my-video{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+    }
+  </style>
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!--  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+	<!--  <source src="https://vjs.zencdn.net/v/oceans.mp4?sd" type='video/mp4' label='SD' res='480' />
+  <source src="https://vjs.zencdn.net/v/oceans.mp4?hd" type='video/mp4' label='HD' res='1060'/> -->
+</body>
+</head>
+
+<body>
+  <video
+    id="my-video"
+    class="video-js vjs-big-play-centered"
+    controls
+    preload="auto"
+    poster="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    data-setup="{}"
+  >
+    <source src="http://127.0.0.1:8080/hls/stream.m3u8
+" type="application/x-mpegURL" label='1080' res='1080'/>
+
+<source src="http://127.0.0.1:8080/hls/stream.m3u8" type="application/x-mpegURL" label='720' res='720'/> >
+
+  
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank"
+        >supports HTML5 video</a
+      >
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+  <link href="videojs-resolution-switcher.css" rel="stylesheet" />
+  <script src="videojs-resolution-switcher.js"></script>
+
+  <script>
+  videojs('my-video').videoJsResolutionSwitcher();
+  document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
+  document.getElementById('my-video').style.width = "" + innerWidth + "px";
+</script>
+</html>
