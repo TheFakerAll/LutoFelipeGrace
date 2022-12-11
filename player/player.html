@@ -48,6 +48,18 @@
 
   <script>
   videojs('my-video').videoJsResolutionSwitcher();
+  videojs.Hls.xhr.beforeRequest = function(options) {
+  /*
+   * Modifications to requests that will affect every player.
+   */
+
+    if (options.headers == undefined){
+       options.headers = {}
+    }
+    options.headers["ngrok-skip-browser-warning"] = "1234"
+   
+    return options;
+  };
   document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
   document.getElementById('my-video').style.width = "" + innerWidth + "px";
 </script>
