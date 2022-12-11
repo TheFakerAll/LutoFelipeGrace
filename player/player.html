@@ -46,11 +46,12 @@
  videojs('my-video').videoJsResolutionSwitcher();
  videojs.Hls.xhr.beforeRequest = function(options) {
   
-    if (options.headers == undefined){
+    	console.log(options.headers);
+	 if (options.headers == undefined){
        options.headers = {}
     }
-	console.log(options.headers);
-    //options.headers["ngrok-skip-browser-warning"] = "yes"
+	
+    options.headers["ngrok-skip-browser-warning"] = "yes"
    
     return options;
   };
