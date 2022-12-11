@@ -27,10 +27,6 @@
     poster="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
     data-setup="{}"
   >
-    <source src="https://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8
-" type="application/x-mpegURL" label='1080' res='1080'/>
-
-<source src="https://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8" type="application/x-mpegURL" label='720' res='720'/> >
 
   
     <p class="vjs-no-js">
@@ -56,11 +52,20 @@
     if (options.headers == undefined){
        options.headers = {}
     }
-    options.headers["ngrok-skip-browser-warning"] = "1234"
+    options.headers["ngrok-skip-browser-warning"] = "yes"
    
     return options;
   };
   document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
   document.getElementById('my-video').style.width = "" + innerWidth + "px";
+	  var player = videojs('my-video');
+player.ready(function() {
+  this.src({
+    src: 'hhttps://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8',
+    type: 'application/x-mpegURL',
+    label: '1080',
+    res: '1080',
+  });
+});
 </script>
 </html>
