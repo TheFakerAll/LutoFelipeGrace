@@ -53,8 +53,7 @@
    
     return options;
   };
-  document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
-  document.getElementById('my-video').style.width = "" + innerWidth + "px";
+
 	  var player = videojs('my-video');
 player.ready(function() {
   this.src(
@@ -64,5 +63,7 @@ player.ready(function() {
     res: '1080',
   );
 });
+	    document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
+  document.getElementById('my-video').style.width = "" + innerWidth + "px";
 </script>
 </html>
