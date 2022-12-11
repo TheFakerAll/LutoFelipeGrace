@@ -27,7 +27,6 @@
     poster="https://www.google.com.br/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
     data-setup="{}"
   >
-
   
     <p class="vjs-no-js">
       To view this video please enable JavaScript, and consider upgrading to a
@@ -58,12 +57,20 @@
 
 	  var player = videojs('my-video');
 player.ready(function() {
-  this.src({
+  this.src([{
     src: 'https://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8',
     type: 'application/x-mpegURL',
     label: '1080',
     res: '1080',
-  });
+  }, 
+  
+{
+	src: 'https://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8',
+	type: 'application/x-mpegURL',
+	label: '720',
+	res: '720',
+  	}
+  ]);
 });
 	    document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
   document.getElementById('my-video').style.width = "" + innerWidth + "px";
