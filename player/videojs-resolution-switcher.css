@@ -29,3 +29,7 @@
   text-transform: none;
   font-size: 1em;
 }
+
+.vjs-resolution-button{
+  background-image: url('engrenagem.png'); 
+}
