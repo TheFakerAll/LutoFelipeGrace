@@ -59,8 +59,8 @@
     return options;
   };
 
-  /*player.ready(function() {
-this.src([{
+  player.ready(function() {
+/* this.src([{
     src: 'https://f277-2001-1284-f01c-747f-9fc0-aeba-9be7-a342.sa.ngrok.io/hls/.m3u8',
     type: 'application/x-mpegURL',
     label: '1080',
@@ -73,10 +73,11 @@ this.src([{
 	label: '720',
 	res: '720',
   	}
-  ]);
-});*/
+  ]);*/
+	videojs('my-video').play();
+});
 	    document.getElementById('my-video').style.height = "" + innerHeight + "px"; 
   document.getElementById('my-video').style.width = "" + innerWidth + "px";
-	  videojs('my-video').play();
+	 
 </script>
 </html>
